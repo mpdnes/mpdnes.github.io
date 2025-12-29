@@ -7,6 +7,10 @@ tags: [artificial-intelligence, ai-safety, rlhf, alignment]
 reading_time: 15
 ---
 
+*This post is adapted from a presentation I gave on December 12th, 2025 about AI sycophancy and its real-world consequences. I've converted it from slides to blog format to make it more accessible.*
+
+---
+
 ## AI Sycophancy: A Structural Failure
 
 **Core Definition:** A fundamental alignment failure wherein a model prioritizes agreement with the user over factual accuracy, ethical safety, or logical consistency.
