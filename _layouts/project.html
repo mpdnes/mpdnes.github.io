@@ -1,0 +1,204 @@
+---
+layout: default
+---
+
+<article class="project-detail">
+  <header class="project-detail-header">
+    <div class="breadcrumb">
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <span>/</span>
+      <span>{{ page.title }}</span>
+    </div>
+    
+    <h1 class="project-detail-title">{{ page.title }}</h1>
+    
+    <div class="project-meta">
+      <span class="project-status {{ page.status }}">{{ page.status | capitalize }}</span>
+      <span class="project-date">{{ page.date | date: "%B %Y" }}</span>
+    </div>
+    
+    {% if page.tech %}
+    <div class="project-tech">
+      {% for tech in page.tech %}
+      <span class="tech-tag">{{ tech }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    
+    {% if page.github or page.demo %}
+    <div class="project-actions">
+      {% if page.github %}
+      <a href="{{ page.github }}" class="btn btn-primary" target="_blank" rel="noopener">
+        <span>View on GitHub</span>
+        <span>→</span>
+      </a>
+      {% endif %}
+      {% if page.demo %}
+      <a href="{{ page.demo }}" class="btn btn-secondary" target="_blank" rel="noopener">
+        <span>Live Demo</span>
+      </a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  {% if page.metrics %}
+  <section class="project-metrics">
+    <h2>Key Metrics</h2>
+    <div class="stats-grid">
+      {% for metric in page.metrics %}
+      <div class="stat-card">
+        <div class="stat-value">{{ metric.value }}</div>
+        <div class="stat-label">{{ metric.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <nav class="project-navigation">
+    {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}" class="nav-link nav-prev">
+      <span class="nav-label">← Previous</span>
+      <span class="nav-title">{{ page.previous.title }}</span>
+    </a>
+    {% endif %}
+    
+    {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}" class="nav-link nav-next">
+      <span class="nav-label">Next →</span>
+      <span class="nav-title">{{ page.next.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+</article>
+
+<style>
+.project-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-detail-header {
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-2xl);
+}
+
+.breadcrumb {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.breadcrumb a {
+  color: var(--color-accent);
+}
+
+.breadcrumb span {
+  margin: 0 var(--space-sm);
+}
+
+.project-detail-title {
+  margin-bottom: var(--space-md);
+}
+
+.project-meta {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  align-items: center;
+}
+
+.project-date {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-text-subtle);
+}
+
+.project-actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.project-content {
+  line-height: 1.8;
+}
+
+.project-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border);
+  margin: var(--space-xl) 0;
+}
+
+.project-metrics {
+  margin: var(--space-3xl) 0;
+  padding: var(--space-2xl) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-3xl);
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  transition: all var(--timing-base) var(--ease);
+}
+
+.nav-link:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.nav-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.nav-next {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .project-navigation {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-next {
+    text-align: left;
+  }
+  
+  .project-actions {
+    flex-direction: column;
+  }
+}
+</style>

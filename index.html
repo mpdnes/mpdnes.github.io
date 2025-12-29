@@ -1,0 +1,248 @@
+---
+layout: default
+title: Home
+---
+
+<div class="hero">
+  <h1 class="hero-title">&gt; Michael Donovan</h1>
+  <p class="hero-subtitle">Systems Engineer • Accessibility Technology • AI/ML</p>
+  <p class="hero-description">
+    Building high-performance systems at the intersection of AI, accessibility, and real-time transcription. 
+    Specialized in Rust systems programming, NLP, speech recognition, and creating technology that enables equity.
+  </p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">
+      <span>View Projects</span>
+      <span>→</span>
+    </a>
+    <a href="mailto:m.donovan28@gmail.com" class="btn btn-secondary">
+      <span>Get in Touch</span>
+    </a>
+  </div>
+</div>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-value">50K+</div>
+    <div class="stat-label">Lines of Code</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">27.4M</div>
+    <div class="stat-label">Words Analyzed</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">8,647</div>
+    <div class="stat-label">Transcripts Processed</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">200+</div>
+    <div class="stat-label">WPM TypeWell Speed</div>
+  </div>
+</div>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  
+  <div class="project-grid">
+    <!-- Transcripts ML Pipeline -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-title">transcripts</h3>
+        <span class="project-status production">Production</span>
+      </div>
+      <p class="project-description">
+        Complete ML training pipeline for fine-tuning Llama 3.1 8B on 8,647 academic transcripts. 
+        Cost-optimized GPU training achieving professional results at $10-20 per run.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag python">Python</span>
+        <span class="tech-tag ml">PyTorch</span>
+        <span class="tech-tag ml">Transformers</span>
+        <span class="tech-tag ml">LoRA</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/transcripts/" class="project-link">
+          <span>Details</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SCRYBE Rust System -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-title">scrybe-rust</h3>
+        <span class="project-status">Active Dev</span>
+      </div>
+      <p class="project-description">
+        High-performance Rust abbreviation expansion engine with sub-millisecond lookup times. 
+        24,431+ LOC across 7-crate workspace with lock-free concurrency.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag rust">Rust</span>
+        <span class="tech-tag">egui</span>
+        <span class="tech-tag">Arena Allocators</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/scrybe-rust/" class="project-link">
+          <span>Details</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- BEGIN Text Completion -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-title">begin</h3>
+        <span class="project-status production">Production</span>
+      </div>
+      <p class="project-description">
+        Academic text completion system with trained Qwen3-8B model, Vosk speech recognition, 
+        and sub-100ms inference latency for real-time predictions.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag python">Python</span>
+        <span class="tech-tag ml">Qwen3-8B</span>
+        <span class="tech-tag">Vosk</span>
+        <span class="tech-tag">FastAPI</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/begin/" class="project-link">
+          <span>Details</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Kiosk Equipment Management -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-title">kiosk</h3>
+        <span class="project-status production">Production</span>
+      </div>
+      <p class="project-description">
+        Flask-based equipment management system with barcode scanning, Snipe-IT integration, 
+        and multi-department deployment across RIT campus.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag python">Flask</span>
+        <span class="tech-tag">Apache</span>
+        <span class="tech-tag">Snipe-IT API</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/kiosk/" class="project-link">
+          <span>Details</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- TAP NLP Toolkit -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-title">TAP</h3>
+        <span class="project-status">Research</span>
+      </div>
+      <p class="project-description">
+        Dual-language NLP toolkit (Python + MATLAB) for analyzing TypeWell transcripts. 
+        Custom TF-IDF implementation and quality control analytics across 9,900+ transcripts.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag python">Python</span>
+        <span class="tech-tag">MATLAB</span>
+        <span class="tech-tag">NLTK</span>
+        <span class="tech-tag ml">NLP</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/tap/" class="project-link">
+          <span>Details</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- TypeWeel AI Assistant -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-title">TypeWeel</h3>
+        <span class="project-status">Active Dev</span>
+      </div>
+      <p class="project-description">
+        Comprehensive AI system for TypeWell transcription with 3-layer compression, 
+        context-aware dictionary management, and hybrid ASR pipeline.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag rust">Rust</span>
+        <span class="tech-tag python">Python</span>
+        <span class="tech-tag ml">NLP</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/typeweel/" class="project-link">
+          <span>Details</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <h2>Technical Expertise</h2>
+  
+  <div class="expertise-grid">
+    <div class="stat-card">
+      <h3 style="margin-bottom: var(--space-md);">Languages & Frameworks</h3>
+      <div class="project-tech">
+        <span class="tech-tag rust">Rust</span>
+        <span class="tech-tag python">Python</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">MATLAB</span>
+        <span class="tech-tag">SQL</span>
+      </div>
+    </div>
+    
+    <div class="stat-card">
+      <h3 style="margin-bottom: var(--space-md);">Machine Learning</h3>
+      <div class="project-tech">
+        <span class="tech-tag ml">PyTorch</span>
+        <span class="tech-tag ml">Transformers</span>
+        <span class="tech-tag ml">PEFT/LoRA</span>
+        <span class="tech-tag ml">Hugging Face</span>
+        <span class="tech-tag ml">NLTK</span>
+      </div>
+    </div>
+    
+    <div class="stat-card">
+      <h3 style="margin-bottom: var(--space-md);">Speech Recognition</h3>
+      <div class="project-tech">
+        <span class="tech-tag">Vosk</span>
+        <span class="tech-tag">Kaldi</span>
+        <span class="tech-tag">KenLM</span>
+        <span class="tech-tag">Azure STT</span>
+        <span class="tech-tag">Deepgram</span>
+      </div>
+    </div>
+    
+    <div class="stat-card">
+      <h3 style="margin-bottom: var(--space-md);">Web & APIs</h3>
+      <div class="project-tech">
+        <span class="tech-tag">FastAPI</span>
+        <span class="tech-tag">Flask</span>
+        <span class="tech-tag">WebSockets</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">REST APIs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+</style>

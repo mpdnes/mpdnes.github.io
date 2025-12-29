@@ -1,0 +1,123 @@
+---
+layout: default
+title: Projects
+description: Portfolio of technical projects spanning machine learning, systems programming, and accessibility technology
+---
+
+<div class="page-header">
+  <h1>Projects</h1>
+  <p class="page-description">
+    A collection of production systems, research tools, and experimental projects at the intersection 
+    of AI/ML, accessibility technology, and high-performance systems programming.
+  </p>
+</div>
+
+<div class="project-filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="production">Production</button>
+  <button class="filter-btn" data-filter="research">Research</button>
+  <button class="filter-btn" data-filter="ml">Machine Learning</button>
+  <button class="filter-btn" data-filter="rust">Rust</button>
+</div>
+
+<div class="project-grid">
+  {% for project in site.projects %}
+  <div class="project-card" data-categories="{{ project.categories | join: ' ' }}">
+    <div class="project-header">
+      <h3 class="project-title">
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      </h3>
+      <span class="project-status {{ project.status }}">{{ project.status | capitalize }}</span>
+    </div>
+    <p class="project-description">{{ project.description }}</p>
+    {% if project.tech %}
+    <div class="project-tech">
+      {% for tech in project.tech %}
+      <span class="tech-tag">{{ tech }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <div class="project-links">
+      <a href="{{ project.url | relative_url }}" class="project-link">
+        <span>Learn More</span>
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<style>
+.page-header {
+  margin-bottom: var(--space-3xl);
+}
+
+.page-description {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  max-width: 800px;
+  margin-top: var(--space-md);
+}
+
+.project-filters {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.375rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all var(--timing-fast) var(--ease);
+}
+
+.filter-btn:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.filter-btn.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: white;
+}
+
+.project-card[data-hidden="true"] {
+  display: none;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const filters = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project-card');
+  
+  filters.forEach(filter => {
+    filter.addEventListener('click', () => {
+      const category = filter.dataset.filter;
+      
+      // Update active state
+      filters.forEach(f => f.classList.remove('active'));
+      filter.classList.add('active');
+      
+      // Filter projects
+      projects.forEach(project => {
+        const categories = project.dataset.categories.split(' ');
+        if (category === 'all' || categories.includes(category)) {
+          project.removeAttribute('data-hidden');
+        } else {
+          project.setAttribute('data-hidden', 'true');
+        }
+      });
+    });
+  });
+});
+</script>

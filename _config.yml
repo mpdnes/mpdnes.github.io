@@ -1,0 +1,54 @@
+# Site settings
+title: Michael Donovan
+subtitle: Systems Engineer & Accessibility Technology Specialist
+description: >-
+  Building high-performance systems at the intersection of AI, accessibility technology,
+  and real-time transcription. Expertise in Rust, Python, NLP, and speech recognition.
+baseurl: ""
+url: "https://mpdnes.github.io"
+
+# Author details
+author:
+  name: Michael Donovan
+  email: m.donovan28@gmail.com
+  location: Rochester, NY
+  github: mpdnes
+  # linkedin: yourlinkedin
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
