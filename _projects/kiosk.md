@@ -2,7 +2,7 @@
 layout: project
 title: "kiosk"
 description: "Flask-based equipment management system with barcode scanning, Snipe-IT integration, and multi-department deployment."
-github: "https://github.com/mpdnes/kiosk"
+github: "https://github.com/mpdnes/kio"
 tech: [Flask, Apache, Snipe-IT API, Python]
 featured: true
 status: "Development"
