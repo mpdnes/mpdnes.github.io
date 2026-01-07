@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="hero">
-  <h1 class="hero-title">&gt; Michael Donovan</h1>
+  <h1 class="hero-title"><span class="prompt">&gt;</span> <span id="typewriter"></span><span class="cursor">|</span></h1>
   <p class="hero-subtitle">Systems Engineer • Accessibility Technology • AI/ML</p>
   <p class="hero-description">
     Building high-performance systems at the intersection of AI, accessibility, and real-time transcription.
@@ -20,6 +20,29 @@ title: Home
     </a>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const text = 'Michael Donovan';
+  const typewriter = document.getElementById('typewriter');
+  const cursor = document.querySelector('.cursor');
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      typewriter.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 100); // Typing speed in milliseconds
+    } else {
+      // Start blinking cursor after typing is complete
+      cursor.classList.add('blink');
+    }
+  }
+
+  // Start typing after a brief delay
+  setTimeout(type, 500);
+});
+</script>
 
 <section id="projects">
   <h2>Featured Projects</h2>
