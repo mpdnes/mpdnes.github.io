@@ -350,6 +350,7 @@ pre code {
   transition: all var(--timing-base) var(--ease);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .project-card:hover {
@@ -388,6 +389,12 @@ pre code {
   background: rgba(46, 164, 79, 0.1);
   border-color: var(--color-success);
   color: var(--color-success);
+}
+
+.project-status.development {
+  background: rgba(255, 173, 51, 0.1);
+  border-color: var(--color-warning);
+  color: var(--color-warning);
 }
 
 .project-description {
@@ -431,6 +438,25 @@ pre code {
   display: flex;
   align-items: center;
   gap: var(--space-xs);
+}
+
+.github-icon {
+  position: absolute;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+  color: var(--color-text-subtle);
+  transition: all var(--timing-base) var(--ease);
+  opacity: 0.6;
+}
+
+.github-icon:hover {
+  color: var(--color-accent);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.project-card:hover .github-icon {
+  opacity: 0.8;
 }
 
 /* Footer */

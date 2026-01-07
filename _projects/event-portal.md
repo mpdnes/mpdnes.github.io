@@ -1,23 +1,24 @@
 ---
 layout: project
 title: "event-portal"
-description: "Event management portal for coordinating accessibility services across campus events. Streamlines scheduling, resource allocation, and real-time coordination."
+description: "Event management portal for coordinating professional development seminars. Streamlines scheduling, resource allocation, and real-time coordination."
+github: "https://github.com/mpdnes/event-portal"
 tech: [Python, Flask, JavaScript]
 featured: true
-status: "Production"
+status: "Development"
 date: 2025-01-06
-categories: [production]
+categories: [web]
 ---
 
 ## Overview
 
-A production event management portal designed for coordinating accessibility services across campus events. Provides streamlined scheduling, resource allocation, and real-time coordination capabilities.
+An event management portal designed for coordinating professional development seminars. Provides streamlined scheduling, resource allocation, and real-time coordination capabilities.
 
 ## Features
 
-- **Event Coordination**: Centralized management of accessibility services
+- **Event Coordination**: Centralized management of professional development seminars
 - **Scheduling System**: Streamlined scheduling across campus events
-- **Resource Allocation**: Efficient assignment of accessibility resources
+- **Resource Allocation**: Efficient assignment of seminar resources
 - **Real-Time Coordination**: Live updates and communication
 
 ## Technical Stack
@@ -28,4 +29,4 @@ A production event management portal designed for coordinating accessibility ser
 
 ## Status
 
-Currently in production use for coordinating accessibility services across campus events.
+Designed for coordinating professional development seminars.

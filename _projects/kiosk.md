@@ -1,17 +1,18 @@
 ---
 layout: project
 title: "kiosk"
-description: "Flask-based equipment management system with barcode scanning, Snipe-IT integration, and multi-department deployment across RIT campus."
+description: "Flask-based equipment management system with barcode scanning, Snipe-IT integration, and multi-department deployment."
+github: "https://github.com/mpdnes/kiosk"
 tech: [Flask, Apache, Snipe-IT API, Python]
 featured: true
-status: "Production"
+status: "Development"
 date: 2025-01-06
-categories: [production]
+categories: [web]
 ---
 
 ## Overview
 
-A production Flask-based equipment management system deployed across multiple departments at RIT campus. Features barcode scanning, Snipe-IT API integration, and streamlined asset tracking workflows.
+A Flask-based equipment management system for multi-department deployment. Features barcode scanning, Snipe-IT API integration, and streamlined asset tracking workflows.
 
 ## Features
 
@@ -29,4 +30,4 @@ A production Flask-based equipment management system deployed across multiple de
 
 ## Status
 
-Currently in production use across RIT campus for equipment management and tracking.
+Designed for equipment management and tracking across multiple departments.
