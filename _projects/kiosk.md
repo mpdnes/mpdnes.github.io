@@ -1,33 +1,27 @@
 ---
 layout: project
 title: "kiosk"
-description: "Flask-based equipment management system with barcode scanning, Snipe-IT integration, and multi-department deployment."
+description: "A $9 equipment management system replacing paper tracking for tens of thousands of dollars in assets."
 github: "https://github.com/mpdnes/kio"
 tech: [Flask, Apache, Snipe-IT API, Python]
 featured: true
-status: "Development"
+status: "Production"
 date: 2025-01-06
 categories: [web]
 ---
 
-## Overview
+## The Problem
 
-A Flask-based equipment management system for multi-department deployment. Features barcode scanning, Snipe-IT API integration, and streamlined asset tracking workflows.
+We were tracking tens of thousands of dollars worth of equipment on paper and scattered spreadsheets. It was a nightmare. Someone suggested a proper asset management system, but we didn't have the budget.
 
-## Features
+## What I Built
 
-- **Barcode Scanning**: Quick asset lookup and management
-- **Snipe-IT Integration**: Seamless synchronization with institutional asset management
-- **Multi-Department Deployment**: Used across RIT campus departments
-- **Apache Deployment**: Production-ready web server configuration
+With sponsorship from the Director of Operations, I built a Flask-based equipment system with barcode scanning and Snipe-IT integration. Total cost: $9.
 
-## Technical Stack
+It was a cross-departmental effort—setting up the infrastructure, getting buy-in, making it work for everyone's workflow. We had fun building it together.
 
-- **Backend**: Flask (Python)
-- **Web Server**: Apache
-- **API Integration**: Snipe-IT REST API
-- **Deployment**: Multi-department production environment
+## Why It Worked
 
-## Status
+The rollout was seamless because I understood the users. They're my coworkers. I knew their pain points because I shared them. That's an underrated advantage—building for a group you belong to means you can't hide behind assumptions.
 
-Designed for equipment management and tracking across multiple departments.
+Got a lot of positive feedback.

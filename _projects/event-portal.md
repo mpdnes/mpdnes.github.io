@@ -1,32 +1,25 @@
 ---
 layout: project
 title: "event-portal"
-description: "Event management portal for coordinating professional development seminars. Streamlines scheduling, resource allocation, and real-time coordination."
+description: "A prototype to replace painful Excel-based event calendars, featuring a virtual pet for engagement."
 github: "https://github.com/mpdnes/event-portal"
 tech: [Python, Flask, JavaScript]
 featured: true
-status: "Development"
+status: "Prototype"
 date: 2025-01-06
 categories: [web]
 ---
 
-## Overview
+## The Problem
 
-An event management portal designed for coordinating professional development seminars. Provides streamlined scheduling, resource allocation, and real-time coordination capabilities.
+I watched someone painstakingly build interactive event calendars in Excel. It was painful. Professional development seminars were being coordinated through spreadsheet gymnastics, and there had to be a better way.
 
-## Features
+## What I Built
 
-- **Event Coordination**: Centralized management of professional development seminars
-- **Scheduling System**: Streamlined scheduling across campus events
-- **Resource Allocation**: Efficient assignment of seminar resources
-- **Real-Time Coordination**: Live updates and communication
+A Flask-based event portal with a weird twist: a virtual "pet" that helped motivate people to engage with professional development. The idea was to make the experience less like checking a box and more like something you'd actually want to interact with.
 
-## Technical Stack
+## What I Learned
 
-- **Backend**: Flask (Python)
-- **Frontend**: JavaScript
-- **Architecture**: Web-based portal system
+This project taught me more about collecting user requirements than about code. I gathered user stories, built something, presented it, learned I'd misunderstood something, iterated, and repeated. That loop—build, show, learn, rebuild—turned out to be the real skill I was developing.
 
-## Status
-
-Designed for coordinating professional development seminars.
+Never went live, but I'm proud of where it landed.
