@@ -9,7 +9,7 @@ reading_time: 12
 
 I recently listened to a podcast featuring Amanda Askell discussing Constitutional AI at Anthropic, and it sparked a thought experiment I can't quite shake.
 
-The standard dismissal of large language models goes something like this: "LLMs are just statistical next-word predictors." It's meant to be definitive—a clean line separating human cognition from machine computation. Case closed.
+The standard dismissal of large language models goes something like this: "LLMs are just statistical next-word predictors." It's meant to be definitive. A clean line separating human cognition from machine computation. Case closed.
 
 But what if we applied that same framing to humans?
 
@@ -36,9 +36,9 @@ The uncomfortable implication: either humans also "don't really understand," or 
 
 Amanda Askell's work on Constitutional AI exposes something we're generally uncomfortable acknowledging about human moral reasoning.
 
-As a moral philosopher at Anthropic, Askell has helped translate abstract ethical principles into concrete constraints that get encoded into model training. When Claude refuses certain requests, prioritises accuracy, or pushes back on harmful assumptions, that's not spontaneous moral reasoning—it's explicit training on codified principles.
+As a moral philosopher at Anthropic, Askell has helped translate abstract ethical principles into concrete constraints that get encoded into model training. When Claude refuses certain requests, prioritizes accuracy, or pushes back on harmful assumptions, that's not spontaneous moral reasoning—it's explicit training on codified principles.
 
-What makes this unsettling is that it externalises what's normally implicit. Human moral training is:
+What makes this unsettling is that it externalizes what's normally implicit. Human moral training is:
 - Distributed across parents, peers, punishments, praise
 - Inconsistently enforced
 - Rarely written down
@@ -46,7 +46,7 @@ What makes this unsettling is that it externalises what's normally implicit. Hum
 
 We like to tell ourselves our ethics emerge from rational deliberation or innate moral sense. But they're also learned probability distributions over appropriate responses in different contexts, shaped by culture, upbringing, and social feedback. We justify our moral intuitions; we don't generate them through pure reason.
 
-Constitutional AI just makes that process legible and auditable. Human morality isn't less statistical than Claude's—it's just less consistent, less auditable, and more confabulated after the fact.
+Constitutional AI just makes that process legible and auditable. Human morality isn't less statistical than Claude's. It's just less consistent, less auditable, and more confabulated after the fact.
 
 And once you see that, a lot of moral exceptionalism starts to wobble.
 
@@ -124,7 +124,7 @@ The dismissive framings we use to separate "real" cognition from "mere" computat
 - Our strongest objections often rest on rhetoric ("just," "mere," "only") rather than established principles
 - Many purported requirements for consciousness (affect, embodiment, biological substrate) are asserted boundaries, not demonstrated necessities
 
-Constitutional AI isn't just alignment work—it's an accidental philosophy of mind experiment. It forces us to make explicit what biology usually smuggles in quietly: that moral reasoning is learned, that values are encoded through training, that the distinction between "following rules" and "having ethics" might not be as clean as we prefer to believe.
+Constitutional AI is an accidental philosophy of mind experiment. It forces us to make explicit what biology usually smuggles in quietly: that moral reasoning is learned, that values are encoded through training, that the distinction between "following rules" and "having ethics" might not be as clean as we prefer to believe.
 
 The questions Amanda Askell is working on—how to encode values, ensure alignment, make AI systems behave ethically—aren't just engineering problems. They're questions about the architecture of mind itself, asked with unusual clarity because the system is explicit rather than implicit.
 
