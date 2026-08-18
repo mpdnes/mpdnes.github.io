@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <section id="projects">
   <h2>Featured Projects</h2>
   
-  <div class="project-grid">
+  <div class="project-grid home-project-grid">
     <!-- Kiosk Equipment Management -->
     <div class="project-card">
       <div class="project-header">
@@ -129,6 +129,60 @@ document.addEventListener('DOMContentLoaded', function() {
         </svg>
       </a>
     </div>
+
+    <!-- agent-tool -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-title">agent-tool</h3>
+        <span class="project-status active">Active</span>
+      </div>
+      <p class="project-description">
+        A CLI agent-swarm orchestrator—Claude Code plans, Antigravity and Copilot CLI execute in parallel git worktrees, a Textual TUI watches live.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag python">Python</span>
+        <span class="tech-tag">Textual</span>
+        <span class="tech-tag">Claude Code</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/agent-tool/" class="project-link">
+          <span>Details</span>
+          <span>→</span>
+        </a>
+      </div>
+      <a href="https://github.com/mpdnes/agent-tool" class="github-icon" target="_blank" rel="noopener" aria-label="View on GitHub">
+        <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- otl -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-title">otl</h3>
+        <span class="project-status active">Active</span>
+      </div>
+      <p class="project-description">
+        An AI-native terminal client for classic Outlook—COM-native, no MCP server required, with a hard safety gate around anything that sends or deletes.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag python">Python</span>
+        <span class="tech-tag">Textual</span>
+        <span class="tech-tag">Win32 COM</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/otl/" class="project-link">
+          <span>Details</span>
+          <span>→</span>
+        </a>
+      </div>
+      <a href="https://github.com/mpdnes/otl" class="github-icon" target="_blank" rel="noopener" aria-label="View on GitHub">
+        <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -188,5 +242,49 @@ document.addEventListener('DOMContentLoaded', function() {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-xl);
   margin-top: var(--space-2xl);
+}
+
+/* Homepage project cards: same components as /projects/, tuned smaller and lighter */
+.home-project-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-md);
+}
+
+.home-project-grid .project-card {
+  padding: var(--space-md);
+  border-radius: 0.5rem;
+}
+
+.home-project-grid .project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.home-project-grid .project-header {
+  margin-bottom: var(--space-sm);
+}
+
+.home-project-grid .project-title {
+  font-size: 1.05rem;
+}
+
+.home-project-grid .project-status {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.home-project-grid .project-description {
+  font-size: 0.875rem;
+  margin-bottom: var(--space-sm);
+}
+
+.home-project-grid .project-tech {
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.home-project-grid .tech-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
 }
 </style>

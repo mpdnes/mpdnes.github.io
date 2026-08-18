@@ -419,6 +419,12 @@ pre code {
   color: var(--color-warning);
 }
 
+.project-status.active {
+  background: rgba(0, 212, 170, 0.1);
+  border-color: var(--color-ml);
+  color: var(--color-ml);
+}
+
 .project-description {
   color: var(--color-text-muted);
   margin-bottom: var(--space-md);
