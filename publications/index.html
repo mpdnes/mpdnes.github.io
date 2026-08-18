@@ -1,0 +1,138 @@
+---
+layout: default
+title: Publications
+description: Peer-reviewed research and conference papers by Michael Donovan
+permalink: /publications/
+---
+
+<div class="page-header">
+  <h1>Publications</h1>
+  <p class="page-description">
+    Peer-reviewed research on AI-augmented education, NLP, and accessibility technology.
+  </p>
+</div>
+
+<div class="pub-list">
+  <article class="pub-card">
+    <div class="pub-header">
+      <h3 class="pub-title">
+        NORMAN: A Retrieval Artificial Intelligence Augmented Teaching Assistant for Higher Education
+      </h3>
+      <span class="project-status">Conference Paper</span>
+    </div>
+
+    <p class="pub-authors">M. Donovan, S. Shadangi, D. Ganskop, C. Beaton, R. Mahajan</p>
+    <p class="pub-affiliation">Rochester Institute of Technology, United States</p>
+
+    <p class="pub-venue">
+      EDULEARN26 Proceedings — 18th International Conference on Education and New Learning Technologies<br>
+      Palma, Spain · June 29–July 1, 2026
+    </p>
+
+    <p class="pub-abstract">
+      Norman is an AI teaching assistant built to address the limitations general-purpose language
+      models run into in the classroom—hallucination, lack of source grounding, and no awareness of
+      institutional access controls. It combines retrieval-augmented generation (RAG), role-based
+      access control, and traceable source attribution over faculty course materials, running offline
+      on the Qwen3.5 foundation model with course content stored as vector embeddings in ChromaDB to
+      keep answers accurate and institutional data private.
+    </p>
+
+    <div class="project-tech">
+      <span class="tech-tag ml">RAG</span>
+      <span class="tech-tag ml">LLMs</span>
+      <span class="tech-tag">ChromaDB</span>
+      <span class="tech-tag">Human-Centered Design</span>
+    </div>
+
+    <p class="pub-cite">
+      DOI: <a href="https://doi.org/10.21125/edulearn.2026.0944" target="_blank" rel="noopener">10.21125/edulearn.2026.0944</a>
+      &nbsp;·&nbsp; ISBN: 978-84-09-88444-5 &nbsp;·&nbsp; ISSN: 2340-1117
+    </p>
+
+    <div class="project-links">
+      <a href="https://library.iated.org/view/DONOVAN2026NOR" class="project-link" target="_blank" rel="noopener">
+        <span>View in IATED Digital Library</span>
+        <span>→</span>
+      </a>
+    </div>
+  </article>
+</div>
+
+<style>
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.pub-card {
+  padding: var(--space-xl);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  transition: border-color var(--timing-fast) var(--ease);
+}
+
+.pub-card:hover {
+  border-color: var(--color-accent);
+}
+
+.pub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.pub-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.pub-affiliation {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-md);
+}
+
+.pub-venue {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+  line-height: 1.6;
+}
+
+.pub-abstract {
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+}
+
+.pub-cite {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text-subtle);
+  margin: var(--space-lg) 0;
+}
+
+.pub-cite a {
+  color: var(--color-text-subtle);
+}
+
+.pub-cite a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 600px) {
+  .pub-header {
+    flex-direction: column;
+  }
+}
+</style>
